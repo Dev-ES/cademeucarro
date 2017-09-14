@@ -20,6 +20,12 @@ Nosso principal objetivo é ter um protótipo funcional da idéia:
 
 Em ambos os serviços nosso objetivo é identificar a placa, consultar a api para saber o status do mesmo, se estiver marcado como roubado vamos gravar uma foto e a localização do GPS para enviar para o dono do carro. (quem sabe direto pra polícia + pra frente).
 
+### Referências
+ * [How I replicated an $86 million project in 57 lines of code](https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9)
+ * [License Plate Recognition in React Native](https://medium.freecodecamp.org/license-plate-recognition-in-react-native-b4f790d3a160)
+ * [Automatic License Plate Recognition library](https://github.com/openalpr/openalpr)
+ * [ReactNative OpenALPR example](https://github.com/cardash/react-native-openalpr/tree/master/Example)
+
 ### Quickstart - Hackathon
 Para darmos um quickstart no projeto nos dias 27 e 28 de Outubro de 2017, iremos realizar um hackathon na sede da PicPay com os envolvidos no projeto, o evento é free e aberto a todos os integrantes da comunidade. Mais informações [aqui](http://atualizarolink.com).
 
