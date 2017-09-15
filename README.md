@@ -37,7 +37,7 @@ Em ambos os serviços nosso objetivo é identificar a placa, consultar a api par
  * [Automatic License Plate Recognition library](https://github.com/openalpr/openalpr)
  * [ReactNative OpenALPR example](https://github.com/cardash/react-native-openalpr/tree/master/Example)
 
-# Hangouts
+#### Hangouts
 
 Podemos organizar alguns hangouts antes e depois do Hackathon, saiba mais no próximo tópico, para melhorar e evoluir o projeto. Vamos usar o [Slack](http://devescom.herokuapp.com/) da comunidade para agendar as datas e horários.
 
