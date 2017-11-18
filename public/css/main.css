@@ -132,6 +132,7 @@ header .menu a.current {
 
 .section-projeto .project-image {
   position: relative;
+  max-height: 337px;
 }
 
 .section-projeto .project-image::before {

@@ -149,6 +149,7 @@ header {
 
   .project-image {
     position: relative;
+    max-height: 337px;
 
     &::before {
       content: "";
@@ -160,10 +161,13 @@ header {
       left: -20px;
       z-index: -1;
     }
+    
   }
 
   img {
     width: 600px;
+
+    
     
   }
 }
@@ -320,7 +324,7 @@ header {
 
 }
 
-// BREAKPOINT: Tablet
+// BREAKPOINT: Mobile
 @media screen and (max-width: 500px) {
   
     .banner {
