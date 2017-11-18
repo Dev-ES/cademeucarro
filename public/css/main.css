@@ -195,6 +195,17 @@ header .menu a.current {
   background-color: #28a486;
 }
 
+.section-apoio ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.section-apoio ul li {
+  margin: 0 40px;
+}
+
 .section-apoio .title-section {
   color: #fff;
   margin-bottom: 50px;

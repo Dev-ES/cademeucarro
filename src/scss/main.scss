@@ -218,6 +218,18 @@ header {
   padding: 60px 0;
   background-color: darken($colorGreen, 20%);
 
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+    li {
+      margin: 0 40px;
+    }
+  }
+  
+
   .title-section  {
     color: #fff;
     margin-bottom: 50px;
