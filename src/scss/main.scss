@@ -329,6 +329,15 @@ header {
   }
 
   .section-apoio {
+
+    ul {
+      flex-direction: column;
+
+      li {
+        margin-bottom: 50px;
+      }
+    }
+
     img {
       width: 250px;
     }

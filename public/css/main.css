@@ -286,6 +286,14 @@ header .menu a.current {
     margin-bottom: 90px;
   }
 
+  .section-apoio ul {
+    flex-direction: column;
+  }
+
+  .section-apoio ul li {
+    margin-bottom: 50px;
+  }
+
   .section-apoio img {
     width: 250px;
   }
