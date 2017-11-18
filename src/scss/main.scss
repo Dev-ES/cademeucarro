@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i');
+
+$colorGreen: #5BD7B9;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+// GLOBAL
+.btn {
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: $colorGreen;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+
+  &.btn-white {
+    background-color: #fff;
+    color: $colorGreen;
+  }
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+// HEADER E MENU
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .logo {
+    img {
+      min-width: 60px;
+    }
+  }
+
+  .menu {
+    ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      margin-left: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $colorGreen;
+      font-size: 18px;
+      padding: 10px;
+      transition: all .4s ease-in-out;
+
+      &:hover,
+      &.current {
+        background-color: $colorGreen;
+        color: #fff;
+        transition: all .4s ease-in-out;
+      }
+    }
+  }
+}
+
+// BANNER PRINCIPAL
+.banner {
+  background-color: $colorGreen;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #5BD7B9;
+    width: 105%;
+    height: 100px;
+    position: absolute;
+    left: -5px;
+    bottom: -35px;
+    transform: rotate(-2deg);
+
+  }
+
+  img {
+    width: 500px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 90px;
+    color: #fff;
+  }
+
+  h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+  }
+}
+
+.title-section {
+  font-size: 45px;
+  font-weight: 300;
+  color: $colorGreen;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50px;
+    background-color: $colorGreen;
+    height: 2px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+}
+
+
+.section-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+// Section Projeto
+.section-projeto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  margin-top: 70px;
+
+  p {
+    padding-right: 90px;
+    margin-bottom: 10px;
+  }
+  
+
+  .project-image {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 200px;
+      background-color: $colorGreen;
+      height: 200px;
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      z-index: -1;
+    }
+  }
+
+  img {
+    width: 600px;
+    
+  }
+}
+
+// Section Como Funciona
+.section-works {
+  background-color: $colorGreen;
+  padding: 60px 0;
+
+  .title-section {
+    color: #fff;
+    text-align: center;
+    
+    &::before {
+      background-color: #fff;
+      left: calc(50% - 25px);
+    }
+  }
+
+  .works-items {
+    display: flex;
+    justify-content: center;
+
+    .item {
+      width: 33.3%;
+      text-align: center;
+
+      h2 {
+        color: #fff;
+        margin: 20px 0;
+      }
+
+      p {
+        color: #fff;
+        padding: 0 40px;
+      }
+
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+
+// SECTION: Apoio
+.section-apoio {
+  text-align: center;
+  padding: 60px 0;
+  background-color: darken($colorGreen, 20%);
+
+  .title-section  {
+    color: #fff;
+    margin-bottom: 50px;
+
+    &::before {
+      background-color: #fff;
+      left: calc(50% - 25px);
+    }
+  }
+
+  img {
+    width: 350px;
+  }
+}
+
+// SECTION: footer
+.footer {
+  background-color: darken($colorGreen, 10%);
+  color: #ffffff;
+  display: inline-block;
+  min-height: 30px;
+  padding: 15px 0;
+  width: 100%;
+  
+  
+  img {
+    max-height: 30px;
+    width: auto;
+  }
+
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .column-left {
+    
+  }
+
+  .column-right {
+    border-left: 1px solid #ffffff;
+    display: flex;
+    text-align: right;
+    
+    padding-left: 30px;
+
+    a {
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    a:hover {
+      opacity: .85;
+    }
+  }
+
+}
+
+
+// BREAKPOINT: Tablet
+@media screen and (max-width: 900px) {
+
+  .banner {
+    &::after {
+      width: 101%;
+    }
+  }
+  
+  .section-projeto {
+    flex-direction: column;
+
+    .project-image {
+      margin-top: 40px;
+    }
+
+    p {
+      padding-right: 60px;
+    }
+
+    img {
+      width: 550px;
+    }
+  }
+
+  
+
+  .section-works {
+    .works-items {
+      flex-direction: column;
+
+      .item {
+        width: 100%;
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+  .section-apoio {
+    img {
+      width: 250px;
+    }
+  }
+
+}
+
+// BREAKPOINT: Tablet
+@media screen and (max-width: 500px) {
+  
+    .banner {
+      img {
+        width: 300px;
+      }
+    }
+    
+    .section-projeto {
+      p {
+        padding-right: 20px;
+      }
+      img {
+        width: 350px;
+      }
+    }
+  
+  }

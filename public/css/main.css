@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i);* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: #5BD7B9;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn.btn-white {
+  background-color: #fff;
+  color: #5BD7B9;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header .logo img {
+  min-width: 60px;
+}
+
+header .menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header .menu li {
+  margin-left: 15px;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: #5BD7B9;
+  font-size: 18px;
+  padding: 10px;
+  transition: all .4s ease-in-out;
+}
+
+header .menu a:hover,
+header .menu a.current {
+  background-color: #5BD7B9;
+  color: #fff;
+  transition: all .4s ease-in-out;
+}
+
+.banner {
+  background-color: #5BD7B9;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  background-color: #5BD7B9;
+  width: 105%;
+  height: 100px;
+  position: absolute;
+  left: -5px;
+  bottom: -35px;
+  transform: rotate(-2deg);
+}
+
+.banner img {
+  width: 500px;
+}
+
+.banner h1 {
+  text-align: center;
+  font-size: 90px;
+  color: #fff;
+}
+
+.banner h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.title-section {
+  font-size: 45px;
+  font-weight: 300;
+  color: #5BD7B9;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title-section::before {
+  content: "";
+  width: 50px;
+  background-color: #5BD7B9;
+  height: 2px;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.section-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.section-projeto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+.section-projeto p {
+  padding-right: 90px;
+  margin-bottom: 10px;
+}
+
+.section-projeto .project-image {
+  position: relative;
+}
+
+.section-projeto .project-image::before {
+  content: "";
+  width: 200px;
+  background-color: #5BD7B9;
+  height: 200px;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.section-projeto img {
+  width: 600px;
+}
+
+.section-works {
+  background-color: #5BD7B9;
+  padding: 60px 0;
+}
+
+.section-works .title-section {
+  color: #fff;
+  text-align: center;
+}
+
+.section-works .title-section::before {
+  background-color: #fff;
+  left: calc(50% - 25px);
+}
+
+.section-works .works-items {
+  display: flex;
+  justify-content: center;
+}
+
+.section-works .works-items .item {
+  width: 33.3%;
+  text-align: center;
+}
+
+.section-works .works-items .item h2 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.section-works .works-items .item p {
+  color: #fff;
+  padding: 0 40px;
+}
+
+.section-works .works-items .item img {
+  width: 120px;
+}
+
+.section-apoio {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #28a486;
+}
+
+.section-apoio .title-section {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.section-apoio .title-section::before {
+  background-color: #fff;
+  left: calc(50% - 25px);
+}
+
+.section-apoio img {
+  width: 350px;
+}
+
+.footer {
+  background-color: #32cda8;
+  color: #ffffff;
+  display: inline-block;
+  min-height: 30px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.footer img {
+  max-height: 30px;
+  width: auto;
+}
+
+.footer .section-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.footer .column-right {
+  border-left: 1px solid #ffffff;
+  display: flex;
+  text-align: right;
+  padding-left: 30px;
+}
+
+.footer .column-right a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .column-right a:hover {
+  opacity: .85;
+}
+
+@media screen and (max-width: 900px) {
+  .banner::after {
+    width: 101%;
+  }
+
+  .section-projeto {
+    flex-direction: column;
+  }
+
+  .section-projeto .project-image {
+    margin-top: 40px;
+  }
+
+  .section-projeto p {
+    padding-right: 60px;
+  }
+
+  .section-projeto img {
+    width: 550px;
+  }
+
+  .section-works .works-items {
+    flex-direction: column;
+  }
+
+  .section-works .works-items .item {
+    width: 100%;
+    margin-bottom: 90px;
+  }
+
+  .section-apoio img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner img {
+    width: 300px;
+  }
+
+  .section-projeto p {
+    padding-right: 20px;
+  }
+
+  .section-projeto img {
+    width: 350px;
+  }
+}
+
+
+/*# sourceMappingURL=main.css.map*/
