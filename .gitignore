@@ -1,0 +1,5 @@
+src/mobile/CadeMeuCarroApp/node_modules/*
+src/mobile/CadeMeuCarroApp/platforms/android/*
+src/mobile/CadeMeuCarroApp/platforms/ios/*
+src/mobile/CadeMeuCarroApp/plugins/*
+src/mobile/CadeMeuCarroApp/www/lib/*
