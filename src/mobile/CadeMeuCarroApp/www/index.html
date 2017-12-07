@@ -11,16 +11,25 @@
     
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
     
     <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-   <div class="container-fluid">
+   <div class="container-fluid center-shit">
        <div class="row">
            <div class="col-xs-12">
                <input id="placa" type="text" class="form-control input-lg" placeholder="Informe a Placa do Carro">
-               <button class="btn btn-lg btn-block btn-primary" onclick="api.buscar()"><span class="fa fa-search"></span> Buscar</button>
             </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-lg btn-block btn-primary" onclick="api.buscar()"><span class="fa fa-search"></span> Buscar</button>
+            </div>
+        </div>
+        <div class="row" id="result-set">
+            
         </div>
    </div>
 </body>
