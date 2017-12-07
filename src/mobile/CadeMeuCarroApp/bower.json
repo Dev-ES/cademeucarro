@@ -1,0 +1,23 @@
+{
+  "name": "cademeucarro",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "authors": [
+    "Edgar Muniz Berlinck"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/edgarberlinck/cademeucarro",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

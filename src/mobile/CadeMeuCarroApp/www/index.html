@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/axios/dist/axios.min.js"></script>
+    
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    
+    <script type="text/javascript" src="js/printer.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+   <div class="container-fluid center-shit">
+       <img src="img/cade-meu-carro.svg" class="img-responsive">
+       <div class="row">
+           <div class="col-xs-12">
+               <input id="placa" type="text" class="form-control input-lg" placeholder="Placa">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-lg btn-block btn-warning" onclick="api.buscar()"><span class="fa fa-search"></span> Buscar</button>
+            </div>
+        </div>
+        <div class="row" id="result-set">
+            
+        </div>
+   </div>
+</body>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+    application.initialize();
+</script>
+</html>
