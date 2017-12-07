@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    background: cadetblue;
+}
+
 .center-shit {
     position: absolute;
     top: 50%;
@@ -9,4 +15,13 @@
 #result-set {
     padding-left: 16px;
     padding-top: 16px;
+}
+
+#placa {
+    font-variant: unicase;
+}
+
+.label-bombada {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
